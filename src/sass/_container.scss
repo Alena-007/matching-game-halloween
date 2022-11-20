@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Creepy';
+  src: url('../Fonts/Creepy.woff') format('woff'), url('../Fonts/Creepy.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lunacy';
+  src: url('../Fonts/Lunacy.woff') format('woff'), url('../Fonts/Lunacy.woff2') format('woff2');
+}
+
+.title {
+  color: #ff6d00;
+  font-family: Creepy, serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 96px;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 10px;
+  margin: 50px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  color: #ffbb89;
+  font-family: Lunacy, serif;
+  font-size: 64px;
+}
+
+@media (max-width: 600px) {
+  .game-container {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .game-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

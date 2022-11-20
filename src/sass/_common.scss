@@ -1,1 +1,15 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  cursor: url('../Cursors/Ghost.cur'), auto;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(#9d5900, #3d2200);
+}
